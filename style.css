@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background: #051c40;
+    color: white;
+    font-family: 'Figtree', "system-ui", sans-serif;
+    padding: 18px;
+    
+}
+
+h1{
+    text-align: center;
+}
