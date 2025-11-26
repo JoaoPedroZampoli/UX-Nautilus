@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Etapa de Investigação — Projeto Nautilus</title>
+  <title>Projeto Nautilus — Interface Humano-Computador</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,251 +11,375 @@
     <header>
       <!-- <div class="logo-placeholder">Imagem Aqui</div> -->
       <div>
-        <h1>Etapa de Investigação</h1>
+        <h1>Projeto Nautilus</h1>
         <div class="authors">Interface Humano-Computador</div>
         <div class="authors">Enrique Reis Susin, RA: 168640<br>João Pedro da Silva Zampoli, RA: 168880<br>João Pedro de Oliveira Almeida, RA: 168881<br>Pedro Marx Amaral Abreu, RA: 169236<br>Thamyris Nunes Sugahara, RA: 169242</div>
       </div>
     </header>
 
-    <section>
-      <h2>Descrição do projeto</h2>
-      <p>
-        <ul>
-          <li>Desenvolver um protótipo que traduz sons do jogo em sinais visuais compreensíveis e personalizáveis para jogadores surdos ou com deficiência auditiva.</li>
-          <li>Implementar captura e classificação de sons em tempo real, com representação visual por ícones adaptados em intensidade e direção.</li>
-          <li>Garantir acessibilidade, usabilidade e foco na experiência do usuário durante todo o desenvolvimento.</li>
-        </ul>
-      </p>
-
-      <h2>Stakeholders e Usuários</h2>
-      <strong>Stakeholders:</strong>
-      <ul>
-        <li>Time de desenvolvimento do projeto Nautilus</li>
-        <li>Comunidade de jogadores surdos e com deficiência auditiva</li>
-        <li>Desenvolvedores de jogos interessados em acessibilidade</li>
-        <!-- <li>Organizações de defesa dos direitos das pessoas com deficiência</li> -->
-        <li>Órgão reguladores e legisladores</li>
-      </ul>
-      <strong>Usuários:</strong>
-      <ul>
-        <li>Jogadores surdos</li>
-        <li>Jogadores com algum grau de deficiência auditiva</li>
-        <li>Jogadores ouvintes que não utilizam som durante o jogo ou que querem reforço visual para sons táticos</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>1. Análise de Sistemas Concorrentes</h2>
-      <p><strong>Objetivo:</strong> Esta análise identifica e avalia produtos e serviços que oferecem soluções de percepção sonora visual para jogadores surdos ou com deficiência auditiva. O objetivo é mapear as vantagens, desvantagens e lacunas de mercado que o Projeto Nautilus pode preencher.</p>
-
-      
-
-      <h3>1.1 Sensor De Voz D3led Music Spectrum Rhythm Lights</h3>
-      <p>Um visualizador de som em hardware, originalmente destinado a mixagem e edição de áudio. Em jogos, limita-se a exibir a intensidade do som ambiente ou do jogador.</p>
-      <p><strong>Vantagens:</strong></p>
-      <ul>
-        <li>Custo: Baixo (aprox. R$ 150);</li>
-        <li>Facilidade: "Plug and Play", de uso imediato.</li>
-      </ul>
-      <p><strong>Desvantagens:</strong></p>
-      <ul>
-        <li>Público-Alvo: Não é projetado para jogadores;</li>
-        <li>Informação: Não fornece dados cruciais como direção ou tipo de som, apenas a existência e intensidade.</li>
-      </ul>
-
-      <h3>1.2 Audio Radar</h3>
-      <p>Uma solução de hardware robusta que envolve o monitor com LEDs. Os LEDs acendem na direção da fonte sonora, com brilho proporcional à intensidade do som.</p>
-      <p><strong>Vantagens:</strong></p>
-      <ul>
-        <li>Compatibilidade: Funciona em mais de 1000 jogos e é compatível com consoles e PC;</li>
-        <li>Personalização: Oferece opções de ajuste para o usuário;</li>
-        <li>Comunidade: Possui uma comunidade ativa e canais de suporte.</li>
-      </ul>
-      <p><strong>Desvantagens:</strong></p>
-      <ul>
-        <li>Custo: Extremamente elevado (US$ 220 a US$ 350), sendo uma barreira de acesso significativa;</li>
-        <li>Complexidade: A montagem e configuração do hardware não são triviais;</li>
-        <li>Generalização: Não distingue tipos de som; trata todos os áudios apenas por intensidade e direção.</li>
-      </ul>
-
-      <h3>1.3 Sound Sight</h3>
-      <p>Um software de sobreposição (overlay) que exibe um círculo centrado no jogador, com uma linha indicando com exatidão a posição da fonte de som.</p>
-      <p><strong>Vantagens:</strong></p>
-      <ul>
-        <li>Custo: Muito acessível (US$ 5);</li>
-        <li>Instalação: Simples, por se tratar de um software;</li>
-        <li>Personalização: Permite alguns ajustes pelo usuário.</li>
-      </ul>
-      <p><strong>Desvantagens:</strong></p>
-      <ul>
-        <li>Risco (Trapaça): Sua precisão é tão alta que é instantaneamente classificado como cheat em jogos competitivos, resultando em banimento do usuário;</li>
-        <li>Poluição Visual: Ineficaz em cenários com múltiplas fontes sonoras;</li>
-        <li>Falta de Distinção: Assim como os demais, não diferencia tipos de som;</li>
-        <li>Legitimidade: Não foram encontrados vídeos ou provas de uso prático, levantando dúvidas sobre a viabilidade do produto.</li>
-         <div class="placeholder-img">
-            <img src="imagens/tanque.png" alt="Exemplo de uso do Sound Sight" />
-      </ul>
-
-     
-
-      <p>A análise revela que os concorrentes atuais oferecem soluções generalistas, focadas exclusivamente em intensidade e direção do som. Nenhum deles aborda a lacuna principal: o significado e a diferenciação dos tipos de som (passos, tiros, alertas, etc.). Essa generalização é a principal fraqueza do mercado e a maior oportunidade para o Projeto Nautilus.</p>
-
-      <div class="placeholder-img">
-        <img src="imagens/tabela.png" alt="Tabela de comparação de concorrentes" />
-
-    </section>
-
-    <section>
-      <h2>2. Análise Documental</h2>
-      <p>Esta análise investiga o panorama regulatório, legal e técnico referente à acessibilidade de percepção sonora visual para jogadores surdos ou com deficiência auditiva. O objetivo é mapear a maturidade das políticas existentes e identificar o posicionamento estratégico para o Projeto Nautilus.</p>
-
-      <h3>2.1 Marcos Legais</h3>
-      <p><strong>Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência)</strong></p>
-      <p><strong>Art. 42.</strong> A pessoa com deficiência tem direito à cultura, ao esporte, ao turismo e ao lazer em igualdade de oportunidades com as demais pessoas, sendo-lhe garantido o acesso:</p>
-      <ul>
-        <li>I - a bens culturais em formato acessível;</li>
-        <li>II - a programas de televisão, cinema, teatro e outras atividades culturais e desportivas em formato acessível; e</li>
-        <li>III - a monumentos e locais de importância cultural e a espaços que ofereçam serviços ou eventos culturais e esportivos.</li>
-      </ul>
-      <p>§ 1º É vedada a recusa de oferta de obra intelectual em formato acessível à pessoa com deficiência, sob qualquer argumento, inclusive sob a alegação de proteção dos direitos de propriedade intelectual.</p>
-      <p><strong>Aplicabilidade:</strong> A LBI não legisla diretamente sobre jogos digitais. No entanto, seu Art. 42, que garante o direito à cultura e ao lazer em formatos acessíveis, estabelece uma base legal para a inclusão em jogos, tratando-os como bens culturais contemporâneos.</p>
-      <p><strong>Limitação:</strong> A lei é superficial na área específica de jogos. Atualmente, não existem normas técnicas (como da ABNT) no Brasil para acessibilidade em jogos, diferentemente do que já ocorre para sistemas Web.</p>
-
-      <p><strong>Communications and Video Accessibility Act (CVAA) - (EUA)</strong></p>
-      <p><strong>Aplicabilidade:</strong> O CVAA é uma lei americana que exige acessibilidade em meios de comunicação avançada (como chats de voz e texto).</p>
-      <p><strong>Evolução:</strong> Os jogos foram inicialmente isentos pela FCC (Comissão Federal de Comunicações). Essa isenção expirou em 31 de dezembro de 2018, portanto todos os jogos lançados ou atualizados desde então, que possuam recursos de comunicação, devem obrigatoriamente cumprir o CVAA. Apesar disso, a FCC continua recebendo inúmeras reclamações sobre a falta de conformidade.</p>
-
-    </section>
-
-    <section>
-    <h2>2.2 Diretrizes de Mercado</h2>
-    <div class="placeholder-img" style="padding:0;">
-        <div style="width:100%;max-width:720px;display:flex;align-items:center;justify-content:center;">
-            <img src="imagens/Exemplo.png" alt="Exemplos de acessibilidade auditiva" style="max-width:100%;height:auto;object-fit:contain;object-position:center;border-radius:12px;">
-        </div>
+    <!-- Sistema de Abas -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="switchTab('investigation')">Investigação</button>
+      <button class="tab-button" onclick="switchTab('prototyping')">Prototyping</button>
     </div>
-    <p>Estas diretrizes representam as "melhores práticas" da indústria, mas sua adoção não é obrigatória.</p>
 
-      <h3>Game Accessibility Guidelines (Desde 2012)</h3>
-      <p>Um guia de referência para desenvolvedores sobre como abordar a acessibilidade de forma prática.</p>
-      <p><strong>Principais Recomendações (Audição):</strong></p>
-      <ul>
-        <li>Legendas e closed captions configuráveis;</li>
-        <li>Indicadores visuais claros para sons críticos (tiros, alarmes, passos);</li>
-        <li>Controles de volume separados (música, efeitos, diálogo);</li>
-        <li>Feedback visual para chat de voz.</li>
-      </ul>
-      <p><strong>Impacto:</strong> Serviu como base para jogos de grande porte, como The Last of Us Part II e Sea of Thieves.</p>
+    <!-- Aba de Investigação -->
+    <div id="investigation" class="tab-content active">
+      <section>
+        <h2>Descrição do projeto</h2>
+        <p>
+          <ul>
+            <li>Desenvolver um protótipo que traduz sons do jogo em sinais visuais compreensíveis e personalizáveis para jogadores surdos ou com deficiência auditiva.</li>
+            <li>Implementar captura e classificação de sons em tempo real, com representação visual por ícones adaptados em intensidade e direção.</li>
+            <li>Garantir acessibilidade, usabilidade e foco na experiência do usuário durante todo o desenvolvimento.</li>
+          </ul>
+        </p>
+
+        <h2>Stakeholders e Usuários</h2>
+        <strong>Stakeholders:</strong>
+        <ul>
+          <li>Time de desenvolvimento do projeto Nautilus</li>
+          <li>Comunidade de jogadores surdos e com deficiência auditiva</li>
+          <li>Desenvolvedores de jogos interessados em acessibilidade</li>
+          <!-- <li>Organizações de defesa dos direitos das pessoas com deficiência</li> -->
+          <li>Órgão reguladores e legisladores</li>
+        </ul>
+        <strong>Usuários:</strong>
+        <ul>
+          <li>Jogadores surdos</li>
+          <li>Jogadores com algum grau de deficiência auditiva</li>
+          <li>Jogadores ouvintes que não utilizam som durante o jogo ou que querem reforço visual para sons táticos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>1. Análise de Sistemas Concorrentes</h2>
+        <p><strong>Objetivo:</strong> Esta análise identifica e avalia produtos e serviços que oferecem soluções de percepção sonora visual para jogadores surdos ou com deficiência auditiva. O objetivo é mapear as vantagens, desvantagens e lacunas de mercado que o Projeto Nautilus pode preencher.</p>
+
+        
+
+        <h3>1.1 Sensor De Voz D3led Music Spectrum Rhythm Lights</h3>
+        <p>Um visualizador de som em hardware, originalmente destinado a mixagem e edição de áudio. Em jogos, limita-se a exibir a intensidade do som ambiente ou do jogador.</p>
+        <p><strong>Vantagens:</strong></p>
+        <ul>
+          <li>Custo: Baixo (aprox. R$ 150);</li>
+          <li>Facilidade: "Plug and Play", de uso imediato.</li>
+        </ul>
+        <p><strong>Desvantagens:</strong></p>
+        <ul>
+          <li>Público-Alvo: Não é projetado para jogadores;</li>
+          <li>Informação: Não fornece dados cruciais como direção ou tipo de som, apenas a existência e intensidade.</li>
+        </ul>
+
+        <h3>1.2 Audio Radar</h3>
+        <p>Uma solução de hardware robusta que envolve o monitor com LEDs. Os LEDs acendem na direção da fonte sonora, com brilho proporcional à intensidade do som.</p>
+        <p><strong>Vantagens:</strong></p>
+        <ul>
+          <li>Compatibilidade: Funciona em mais de 1000 jogos e é compatível com consoles e PC;</li>
+          <li>Personalização: Oferece opções de ajuste para o usuário;</li>
+          <li>Comunidade: Possui uma comunidade ativa e canais de suporte.</li>
+        </ul>
+        <p><strong>Desvantagens:</strong></p>
+        <ul>
+          <li>Custo: Extremamente elevado (US$ 220 a US$ 350), sendo uma barreira de acesso significativa;</li>
+          <li>Complexidade: A montagem e configuração do hardware não são triviais;</li>
+          <li>Generalização: Não distingue tipos de som; trata todos os áudios apenas por intensidade e direção.</li>
+        </ul>
+
+        <h3>1.3 Sound Sight</h3>
+        <p>Um software de sobreposição (overlay) que exibe um círculo centrado no jogador, com uma linha indicando com exatidão a posição da fonte de som.</p>
+        <p><strong>Vantagens:</strong></p>
+        <ul>
+          <li>Custo: Muito acessível (US$ 5);</li>
+          <li>Instalação: Simples, por se tratar de um software;</li>
+          <li>Personalização: Permite alguns ajustes pelo usuário.</li>
+        </ul>
+        <p><strong>Desvantagens:</strong></p>
+        <ul>
+          <li>Risco (Trapaça): Sua precisão é tão alta que é instantaneamente classificado como cheat em jogos competitivos, resultando em banimento do usuário;</li>
+          <li>Poluição Visual: Ineficaz em cenários com múltiplas fontes sonoras;</li>
+          <li>Falta de Distinção: Assim como os demais, não diferencia tipos de som;</li>
+          <li>Legitimidade: Não foram encontrados vídeos ou provas de uso prático, levantando dúvidas sobre a viabilidade do produto.</li>
+           <div class="placeholder-img">
+              <img src="imagens/tanque.png" alt="Exemplo de uso do Sound Sight" />
+        </ul>
+
+       
+
+        <p>A análise revela que os concorrentes atuais oferecem soluções generalistas, focadas exclusivamente em intensidade e direção do som. Nenhum deles aborda a lacuna principal: o significado e a diferenciação dos tipos de som (passos, tiros, alertas, etc.). Essa generalização é a principal fraqueza do mercado e a maior oportunidade para o Projeto Nautilus.</p>
+
+        <div class="placeholder-img">
+          <img src="imagens/tabela.png" alt="Tabela de comparação de concorrentes" />
+
+      </section>
+
+      <section>
+        <h2>2. Análise Documental</h2>
+        <p>Esta análise investiga o panorama regulatório, legal e técnico referente à acessibilidade de percepção sonora visual para jogadores surdos ou com deficiência auditiva. O objetivo é mapear a maturidade das políticas existentes e identificar o posicionamento estratégico para o Projeto Nautilus.</p>
+
+        <h3>2.1 Marcos Legais</h3>
+        <p><strong>Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência)</strong></p>
+        <p>Vigente desde 2015 no Brasil, esta é a base legal mais ampla do país para direitos da pessoa com deficiência.</p>
+        <p><strong>Objetivo:</strong> "Assegurar e promover, em condições de igualdade, o exercício dos direitos e das liberdades fundamentais por pessoa com deficiência" (Art. 1º, Lei nº 13.146).</p>
+        <p><strong>Artigos Relevantes:</strong></p>
+        <ul>
+          <li>Art. 63: "É obrigatória a acessibilidade nos sítios da internet mantidos por empresas (...) para uso da pessoa com deficiência, garantindo-lhe acesso às informações disponíveis, conforme as melhores práticas e diretrizes de acessibilidade adotadas internacionalmente";</li>
+          <li>Art. 68: Define direitos ao esporte, lazer e cultura, mas não menciona especificamente videogames.</li>
+        </ul>
+        <p><strong>Limitação para Jogos:</strong> A LBI não trata diretamente da acessibilidade de videogames ou softwares de entretenimento, ficando restrita a sites e infraestrutura física.</p>
+
+        <p><strong>Twenty-First Century Communications and Video Accessibility Act (CVAA)</strong></p>
+        <p>Legislação dos Estados Unidos que regula serviços de comunicação e vídeo.</p>
+        <p><strong>Aplicação aos Jogos:</strong></p>
+        <ul>
+          <li>Requisitos de acessibilidade passam a valer para jogos lançados ou atualizados a partir de 1º de janeiro de 2019;</li>
+          <li>Obrigatório incluir legendas, closed captions, e ferramentas acessíveis de comunicação (texto e voz).</li>
+        </ul>
+        <p><strong>Limitação:</strong> Focada em comunicação e legendas, não em percepção sonora não verbal (ex.: passos, tiros, alertas táticos).</p>
+
+        <h2>2.2 Padrões e Diretrizes Técnicas</h2>
+
+        <h3>Game Accessibility Guidelines (GAG)</h3>
+        <p>Um guia colaborativo consolidado pela indústria de games desde 2012, organizado em níveis de complexidade: Basic, Intermediate e Advanced.</p>
+        <p><strong>Principais Recomendações (Audição):</strong></p>
+        <ul>
+          <li>Oferecer sinais visuais separados para todos os sons importantes;</li>
+          <li>Fornecer legendas para toda fala e descrições textuais para efeitos sonoros não verbais (ex.: "porta batendo" ao fundo);</li>
+          <li>Incluir opções de personalização (tamanho, cor, fundo, posição das legendas);</li>
+          <li>Evitar dependência exclusiva do som para transmitir informações importantes.</li>
+        </ul>
+        <p><strong>Limitação:</strong> Trata-se de um guia voluntário, não mandatório. Não existe uma certificação formal ou exigência legal para sua adoção.</p>
 
 
-      <h3>Xbox Accessibility Guidelines (XAGs)</h3>
-      <p>O conjunto de diretrizes mais detalhado do mercado, publicado pela Microsoft (Xbox) como um guia de boas práticas para a plataforma.</p>
-      <p><strong>Principais Recomendações (Audição):</strong></p>
-      <ul>
-        <li>Sinais visuais para todos os alertas sonoros críticos (passos, tiros, etc.);</li>
-        <li>Fornecimento de informações de forma multissensorial (combinando visão e audição);</li>
-        <li>Legendas (diálogos) e Closed Captions (para sons não verbais, ex: "porta batendo");</li>
-        <li>Amplas opções de personalização de legendas (tamanho, cor, fundo);</li>
-        <li>Feedback visual e transcrição para chat de voz.</li>
-      </ul>
-      <p><strong>Limitação:</strong> São sugestões de melhores práticas, não requisitos obrigatórios para a publicação de um jogo na plataforma Xbox.</p>
+        <h3>Xbox Accessibility Guidelines (XAGs)</h3>
+        <p>O conjunto de diretrizes mais detalhado do mercado, publicado pela Microsoft (Xbox) como um guia de boas práticas para a plataforma.</p>
+        <p><strong>Principais Recomendações (Audição):</strong></p>
+        <ul>
+          <li>Sinais visuais para todos os alertas sonoros críticos (passos, tiros, etc.);</li>
+          <li>Fornecimento de informações de forma multissensorial (combinando visão e audição);</li>
+          <li>Legendas (diálogos) e Closed Captions (para sons não verbais, ex: "porta batendo");</li>
+          <li>Amplas opções de personalização de legendas (tamanho, cor, fundo);</li>
+          <li>Feedback visual e transcrição para chat de voz.</li>
+        </ul>
+        <p><strong>Limitação:</strong> São sugestões de melhores práticas, não requisitos obrigatórios para a publicação de um jogo na plataforma Xbox.</p>
 
-    </section>
+      </section>
 
-    <section>
-      <h2>3. Pesquisa com o Usuário (Questionário Online)</h2>
-      <p>Esta análise sintetiza os dados de duas respostas da pesquisa de campo, ambas de usuários com perda auditiva "Moderada". O objetivo é validar as hipóteses do problema, identificar os desafios centrais enfrentados por eles e mapear suas preferências e expectativas para uma solução de acessibilidade sonora.</p>
+      <section>
+        <h2>3. Pesquisa com o Usuário (Questionário Online)</h2>
+        <p>Esta análise sintetiza os dados de duas respostas da pesquisa de campo, ambas de usuários com perda auditiva "Moderada". O objetivo é validar as hipóteses do problema, identificar os desafios centrais enfrentados por eles e mapear suas preferências e expectativas para uma solução de acessibilidade sonora.</p>
 
-      <h3>3.1 Pontos de Convergência</h3>
-      <p><strong>O Problema Central é Tático</strong></p>
-      <p>O maior desafio para ambos os usuários é a perda de consciência situacional (situational awareness).</p>
-      <ul>
-        <li><strong>Desafio principal (U1):</strong> "Não saber quando algo aconteceu.";</li>
-        <li><strong>Desafio principal (U2):</strong> "Não saber de onde vem o som (direção).";</li>
-        <li><strong>Sons mais sentidos (Ambos):</strong> "Passos de inimigos" foi citado por ambos como uma informação crítica perdida.</li>
-      </ul>
-      <p><strong>Validação do Mercado: Fortnite é o Único Benchmark</strong></p>
-      <p>Ambos os usuários já utilizaram sistemas visuais de som e citaram o Fortnite como o melhor (e único) exemplo.</p>
-      <ul>
-        <li>U1: "fortnite, ele aponta a direção e mostra com sinais oque é o som.";</li>
-        <li>U2: "Fortnite mostrando ícones na tela de acordo com aproximação..."</li>
-      </ul>
-      <p><strong>Insight:</strong> O sistema do Fortnite é o padrão de mercado que os usuários conhecem. O Projeto Nautilus deve, no mínimo, usar essa funcionalidade como linha de base.</p>
-      <h3>A Demanda Inegociável: Personalização Total</h3>
-      <p>Este é o ponto mais crítico e unânime da pesquisa. A solução ideal deve ser
-      profundamente personalizável.</p>
-      <ul>
-        <li><strong>Controle Total:</strong> Ambos os usuários marcaram todas as opções de
-        personalização disponíveis no formulário (Cores, Tamanho, Posição, Quais
-        sons mostrar/esconder, Sensibilidade, Opacidade);</li>
-        <li><strong>Posição em Tela:</strong> Ambos escolheram "Personalizável (eu escolho)";</li>
-        <li><strong>Cores:</strong> Ambos preferem um "Código de cores por tipo (vermelho=perigo,
-        azul=ambiente, etc)".</li>
-      </ul>
-      <p><strong>Sistema Ideal (descrito por eles):</strong> As respostas foram quase idênticas:</p>
-      <ul>
-        <li><strong>U1:</strong> "um sistema flutuante na tela personalizavel em suas intensidades,
-        sensibilidade e outros atributos.";</li>
-        <li><strong>U2:</strong> "Personalizável, em  todas a característica de cor, tamanho, transparência
-        e localização na tela "</li>
-      </ul>
+        <h3>3.1 Pontos de Convergência</h3>
+        <p><strong>O Problema Central é Tático</strong></p>
+        <p>O maior desafio para ambos os usuários é a perda de consciência situacional (situational awareness).</p>
+        <ul>
+          <li><strong>Desafio principal (U1):</strong> "Não saber quando algo aconteceu.";</li>
+          <li><strong>Desafio principal (U2):</strong> "Não saber de onde vem o som (direção).";</li>
+          <li><strong>Sons mais sentidos (Ambos):</strong> "Passos de inimigos" foi citado por ambos como uma informação crítica perdida.</li>
+        </ul>
+        <p><strong>Validação do Mercado: Fortnite é o Único Benchmark</strong></p>
+        <p>Ambos os usuários já utilizaram sistemas visuais de som e citaram o Fortnite como o melhor (e único) exemplo.</p>
+        <ul>
+          <li>U1: "fortnite, ele aponta a direção e mostra com sinais oque é o som.";</li>
+          <li>U2: "Fortnite mostrando ícones na tela de acordo com aproximação..."</li>
+        </ul>
+        <p><strong>Insight:</strong> O sistema do Fortnite é o padrão de mercado que os usuários conhecem. O Projeto Nautilus deve, no mínimo, usar essa funcionalidade como linha de base.</p>
+        <h3>A Demanda Inegociável: Personalização Total</h3>
+        <p>Este é o ponto mais crítico e unânime da pesquisa. A solução ideal deve ser
+        profundamente personalizável.</p>
+        <ul>
+          <li><strong>Controle Total:</strong> Ambos os usuários marcaram todas as opções de
+          personalização disponíveis no formulário (Cores, Tamanho, Posição, Quais
+          sons mostrar/esconder, Sensibilidade, Opacidade);</li>
+          <li><strong>Posição em Tela:</strong> Ambos escolheram "Personalizável (eu escolho)";</li>
+          <li><strong>Cores:</strong> Ambos preferem um "Código de cores por tipo (vermelho=perigo,
+          azul=ambiente, etc)".</li>
+        </ul>
+        <p><strong>Sistema Ideal (descrito por eles):</strong> As respostas foram quase idênticas:</p>
+        <ul>
+          <li><strong>U1:</strong> "um sistema flutuante na tela personalizavel em suas intensidades,
+          sensibilidade e outros atributos.";</li>
+          <li><strong>U2:</strong> "Personalizável, em  todas a característica de cor, tamanho, transparência
+          e localização na tela "</li>
+        </ul>
 
-      <h3>3.2 Maiores Riscos</h3>
-      <p>As maiores preocupações dos usuários validam a necessidade de personalização.</p>
-      <ul>
-        <li><strong>Preocupação Nº 1 (Ambos):</strong> "Poluir muito a tela";</li>
-        <li><strong>Preocupação Nº 2 (Ambos):</strong> "Não ser personalizável";</li>
-        <li>Outras: "Afetar a performance" (U1), "Ser muito complicado" (U1) e "Não funcionar bem" (U2).</li>
-      </ul>
-      <p><strong>Insight:</strong> Existe uma tensão clara entre "fornecer informação" e "poluir a tela". A única forma de resolver isso é permitir que o usuário decida o equilíbrio. O U1 preferiu um sistema "Equilibrado", enquanto o U2 preferiu um "Minimalista", reforçando a necessidade de escolha.</p>
+        <h3>3.2 Maiores Riscos</h3>
+        <p>As maiores preocupações dos usuários validam a necessidade de personalização.</p>
+        <ul>
+          <li><strong>Preocupação Nº 1 (Ambos):</strong> "Poluir muito a tela";</li>
+          <li><strong>Preocupação Nº 2 (Ambos):</strong> "Não ser personalizável";</li>
+          <li>Outras: "Afetar a performance" (U1), "Ser muito complicado" (U1) e "Não funcionar bem" (U2).</li>
+        </ul>
+        <p><strong>Insight:</strong> Existe uma tensão clara entre "fornecer informação" e "poluir a tela". A única forma de resolver isso é permitir que o usuário decida o equilíbrio. O U1 preferiu um sistema "Equilibrado", enquanto o U2 preferiu um "Minimalista", reforçando a necessidade de escolha.</p>
 
-      <h2>Pontos de reflexão sobre o uso dos métodos</h2>
-      <ul>
-        <li>
-          A principal limitação foi o número reduzido de participantes na pesquisa com usuários (apenas duas pessoas), o que impede generalizações e pode deixar de fora perfis importantes de jogadores. Além disso, o questionário online não permitiu observar diretamente o uso de jogos ou do sistema em contexto real, o que restringe a compreensão de problemas de usabilidade mais finos.
-        </li>
-        <li>
-          Além disso, não há regulamentação adequada no Brasil e afora para acessibilidade em games, apesar de leis mais gerais (LBI, CVAA) estabelecerem a importância do tema. As diretrizes de mercado (Game Accessibility Guidelines, XAGs) fornecem boas práticas, mas não são obrigatórias e sua adoção é inconsistente.
-        </li>
-        <li>
-          Conhecer os concorrentes nos permitiu identificar lacunas onde o Nautilus pode se destacar, especialmente na diferenciação de tipos de som e na personalização profunda.
-        </li>
-      </ul>
+        <h2>Pontos de reflexão sobre o uso dos métodos</h2>
+        <ul>
+          <li>
+            A principal limitação foi o número reduzido de participantes na pesquisa com usuários (apenas duas pessoas), o que impede generalizações e pode deixar de fora perfis importantes de jogadores. Além disso, o questionário online não permitiu observar diretamente o uso de jogos ou do sistema em contexto real, o que restringe a compreensão de problemas de usabilidade mais finos.
+          </li>
+          <li>
+            Além disso, não há regulamentação adequada no Brasil e afora para acessibilidade em games, apesar de leis mais gerais (LBI, CVAA) estabelecerem a importância do tema. As diretrizes de mercado (Game Accessibility Guidelines, XAGs) fornecem boas práticas, mas não são obrigatórias e sua adoção é inconsistente.
+          </li>
+          <li>
+            Conhecer os concorrentes nos permitiu identificar lacunas onde o Nautilus pode se destacar, especialmente na diferenciação de tipos de som e na personalização profunda.
+          </li>
+        </ul>
 
-      <h2>Lista de tarefas de como o sistema deve ser usado</h2>
-        <ol>
-          <li>Um jogador configura o sistema pela primeira vez, escolhendo quais tipos de som deseja visualizar (passos, tiros, veículos, alertas do jogo) e ajustando cores, tamanho e opacidade dos ícones na tela.</li>
-          <li>Durante uma partida de FPS, o jogador usa os indicadores visuais para identificar a direção de passos inimigos que se aproximam por trás e decide se esconder ou contra-atacar com base apenas nessas pistas visuais.</li>
-          <li>Em um jogo com muitos efeitos sonoros, o jogador ajusta a sensibilidade do sistema para reduzir ícones desnecessários e evitar poluição visual, mantendo apenas sinais para sons táticos críticos (tiros, recarga, granadas, alerta de zona).</li>
-          <li>Durante uma partida em equipe, o jogador utiliza o sistema para perceber alertas sonoros do próprio jogo (como área perigosa, tempo de objetivo, chegada de veículo) sem depender de som ou de comunicação por voz.</li>
-          <li>Um jogador alterna entre diferentes perfis de configuração (por exemplo: "Total", "Parcial", "Somente tiros") ao iniciar o software, variando a quantidade de ícones e o nível de detalhe conforme o tipo de jogo.</li>
-          <li>Após uma série de partidas, o jogador pode ajustar novamente a sensibilidade e desativar ícones de sons pouco relevantes (como sons ambientais), deixando visíveis apenas sons táticos críticos, para reduzir a poluição visual sem perder informação importante.</li>
-        </ol>
+        <h2>Lista de tarefas de como o sistema deve ser usado</h2>
+          <ol>
+            <li>Um jogador configura o sistema pela primeira vez, escolhendo quais tipos de som deseja visualizar (passos, tiros, veículos, alertas do jogo) e ajustando cores, tamanho e opacidade dos ícones na tela.</li>
+            <li>Durante uma partida de FPS, o jogador usa os indicadores visuais para identificar a direção de passos inimigos que se aproximam por trás e decide se esconder ou contra-atacar com base apenas nessas pistas visuais.</li>
+            <li>Em um jogo com muitos efeitos sonoros, o jogador ajusta a sensibilidade do sistema para reduzir ícones desnecessários e evitar poluição visual, mantendo apenas sinais para sons táticos críticos (tiros, recarga, granadas, alerta de zona).</li>
+            <li>Durante uma partida em equipe, o jogador utiliza o sistema para perceber alertas sonoros do próprio jogo (como área perigosa, tempo de objetivo, chegada de veículo) sem depender de som ou de comunicação por voz.</li>
+            <li>Um jogador alterna entre diferentes perfis de configuração (por exemplo: "Total", "Parcial", "Somente tiros") ao iniciar o software, variando a quantidade de ícones e o nível de detalhe conforme o tipo de jogo.</li>
+            <li>Após uma série de partidas, o jogador pode ajustar novamente a sensibilidade e desativar ícones de sons pouco relevantes (como sons ambientais), deixando visíveis apenas sons táticos críticos, para reduzir a poluição visual sem perder informação importante.</li>
+          </ol>
 
-      <h3>REFERÊNCIAS</h3>
-      <div class="refs card">
-        <p>AUDIO RADAR. [S.l.: s.n.]. Disponível em: <span class="url">https://audioradar.com/</span></p>
-        <p>BAYLISS, Ben. Games After January 1, 2019 Must Have Accessible Communications Under CVAA Legislation [UPDATE]. DualShockers, 1 jan. 2019. Disponível em: <span class="url">https://www.dualshockers.com/cvaa-2019-games-to-be-made-accessible-for-disabilities/</span></p>
-        <p>BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Brasília, DF: Presidência da República, [2015]. Disponível em: <span class="url">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</span></p>
-        <p>ELLIS, Barrie. et al. Game accessibility guidelines | A straightforward reference for inclusive game design. [S.l.: s.n.], [2012]. Disponível em: <span class="url">https://gameaccessibilityguidelines.com/</span></p>
-        <p>FEDERAL COMMUNICATIONS COMMISSION (FCC). Twenty-First Century Communications and Video Accessibility Act. [S.l.]: FCC. Disponível em: <span class="url">https://www.fcc.gov/cvaa</span></p>
-        <p>FEDERAL Communications Commission Rules Require Communications in Video Games to Be Accessible and Usable. The National Law Review, 22 out. 2019. Disponível em: <span class="url">https://natlawreview.com/article/federal-communications-commission-rules-require-communications-video-games-to-be</span></p>
-        <p>MICROSOFT. Xbox Accessibility Guideline 105. Microsoft Game Dev.</p>
-        <p>PLAYSTATION. Acessibilidade de The Last of Us Part II. [S.l.]: Sony Interactive Entertainment. Disponível em: <span class="url">https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/accessibility/</span></p>
-        <p>WESTIN, Tobias. et al. Game Accessibility Guidelines and WCAG 2.0 – A Gap Analysis. Lecture Notes in Computer Science, p. 270–279, 2018.</p>
+        <h3>REFERÊNCIAS</h3>
+        <div class="refs card">
+          <p>AUDIO RADAR. [S.l.: s.n.]. Disponível em: <span class="url">https://audioradar.com/</span></p>
+          <p>BAYLISS, Ben. Games After January 1, 2019 Must Have Accessible Communications Under CVAA Legislation [UPDATE]. DualShockers, 1 jan. 2019. Disponível em: <span class="url">https://www.dualshockers.com/cvaa-2019-games-to-be-made-accessible-for-disabilities/</span></p>
+          <p>BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Brasília, DF: Presidência da República, [2015]. Disponível em: <span class="url">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</span></p>
+          <p>ELLIS, Barrie. et al. Game accessibility guidelines | A straightforward reference for inclusive game design. [S.l.: s.n.], [2012]. Disponível em: <span class="url">https://gameaccessibilityguidelines.com/</span></p>
+          <p>FEDERAL COMMUNICATIONS COMMISSION (FCC). Twenty-First Century Communications and Video Accessibility Act. [S.l.]: FCC. Disponível em: <span class="url">https://www.fcc.gov/cvaa</span></p>
+          <p>FEDERAL Communications Commission Rules Require Communications in Video Games to Be Accessible and Usable. The National Law Review, 22 out. 2019. Disponível em: <span class="url">https://natlawreview.com/article/federal-communications-commission-rules-require-communications-video-games-to-be</span></p>
+          <p>MICROSOFT. Xbox Accessibility Guideline 105. Microsoft Game Dev.</p>
+          <p>PLAYSTATION. Acessibilidade de The Last of Us Part II. [S.l.]: Sony Interactive Entertainment. Disponível em: <span class="url">https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/accessibility/</span></p>
+          <p>WESTIN, Tobias. et al. Game Accessibility Guidelines and WCAG 2.0 – A Gap Analysis. Lecture Notes in Computer Science, p. 270–279, 2018.</p>
 
-        <p class="url">https://audioradar.com/</p>
-        <p class="url">https://www.dualshockers.com/cvaa-2019-games-to-be-made-accessible-for-disabilities/</p>
-        <p class="url">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</p>
-        <p class="url">https://gameaccessibilityguidelines.com/</p>
-        <p class="url">https://www.fcc.gov/cvaa</p>
-        <p class="url">https://natlawreview.com/article/federal-communications-commission-rules-require-communications-video-games-to-be</p>
-        <p class="url">https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/accessibility/</p>
-      </div>
+          <p class="url">https://audioradar.com/</p>
+          <p class="url">https://www.dualshockers.com/cvaa-2019-games-to-be-made-accessible-for-disabilities/</p>
+          <p class="url">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm</p>
+          <p class="url">https://gameaccessibilityguidelines.com/</p>
+          <p class="url">https://www.fcc.gov/cvaa</p>
+          <p class="url">https://natlawreview.com/article/federal-communications-commission-rules-require-communications-video-games-to-be</p>
+          <p class="url">https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/accessibility/</p>
+        </div>
 
-    </section>
+      </section>
+    </div>
 
-   
+    <!-- Aba de Prototyping -->
+    <div id="prototyping" class="tab-content">
+      <section>
+        <h2>Prototyping — Baixa Fidelidade</h2>
+        <p>Nesta seção, apresentamos os protótipos de baixa fidelidade desenvolvidos para o Projeto Nautilus, incluindo rascunhos iniciais, demonstrações em vídeo e o protótipo interativo no Balsamiq.</p>
+
+        <h3>Rascunhos Iniciais</h3>
+        <p>Os primeiros esboços e conceitos visuais criados pela equipe para explorar diferentes abordagens de design.</p>
+        
+        <div class="sketches-grid">
+          <div class="sketch-item">
+            <h4>Rascunho 1</h4>
+            <div class="sketch-placeholder">
+              <img src="imagens/rascunho_1.PNG" alt="Rascunho 1">
+            </div>
+          </div>
+
+          <div class="sketch-item">
+            <h4>Rascunho 2</h4>
+            <div class="sketch-placeholder">
+             <img src="imagens/rascunho_2.PNG" alt="Rascunho 2">
+
+            </div>
+          </div>
+
+        <div class="video-container">
+          <h4>Vídeo 1</h4>
+          <div class="video-placeholder">
+      
+            <video controls>
+              <source src="videos/video8.mp4" type="video/mp4">
+            </video>
+      
+          </div>
+        </div>
+
+        <div class="video-container">
+          <h4>Vídeo 1</h4>
+          <div class="video-placeholder">
+      
+            <video controls>
+              <source src="videos/video7.mp4" type="video/mp4">
+            </video>
+      
+          </div>
+        </div>
+
+          
+        </div>
+
+        <h3>Demonstrações em Vídeo</h3>
+        <p>Vídeos demonstrando os conceitos e interações propostas nos protótipos.</p>
+
+        <div class="video-container">
+          <h4>Vídeo 1</h4>
+          <div class="video-placeholder">
+      
+            <video controls>
+              <source src="videos/video10.mp4" type="video/mp4">
+            </video>
+      
+          </div>
+        </div>
+
+        <div class="video-container">
+          <h4>Vídeo 2</h4>
+          <div class="video-placeholder">
+            <video controls>
+              <source src="videos/video5.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div class="video-placeholder">
+            <video controls>
+              <source src="videos/video3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="video-placeholder">
+            <video controls>
+              <source src="videos/video6.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+
+
+        <h3>Protótipo Interativo</h3>
+        <p>Acesse nosso protótipo interativo desenvolvido no Balsamiq para explorar o fluxo de navegação e as funcionalidades principais do sistema.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+          <a href="https://balsamiq.cloud/svcmasj/pfxc9mc/r17ED" class="balsamiq-link" target="_blank" rel="noopener">
+            🔗 Acessar Protótipo no Balsamiq
+          </a>
+        </div>
+        
+        <p style="color: var(--muted); font-size: 14px; margin-top: 20px;">
+          <strong>Instruções:</strong> O protótipo permite interagir com as principais telas do sistema, incluindo configurações de personalização, visualização de ícones sonoros e ajustes de sensibilidade.
+        </p>
+      </section>
+    </div>
+
   </main>
+
+  <script>
+    function switchTab(tabId) {
+      // Remover active de todas as abas e conteúdos
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      // Adicionar active na aba e conteúdo selecionados
+      event.target.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+      
+      // Scroll suave para o topo do conteúdo
+      document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  </script>
 </body>
 </html>
