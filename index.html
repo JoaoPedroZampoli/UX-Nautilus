@@ -20,7 +20,8 @@
     <!-- Sistema de Abas -->
     <div class="tabs">
       <button class="tab-button active" onclick="switchTab('investigation')">Investigação</button>
-      <button class="tab-button" onclick="switchTab('prototyping')">Prototyping</button>
+      <button class="tab-button" onclick="switchTab('prototyping')">Prototipagem de baixa fidelidade</button>
+      <button class="tab-button" onclick="switchTab('heuristics')">Avaliação Heurística</button>
     </div>
 
     <!-- Aba de Investigação -->
@@ -362,6 +363,39 @@
         <p style="color: var(--muted); font-size: 14px; margin-top: 20px;">
           <strong>Instruções:</strong> O protótipo permite interagir com as principais telas do sistema, incluindo configurações de personalização, visualização de ícones sonoros e ajustes de sensibilidade.
         </p>
+      </section>
+    </div>
+
+    <!-- Guia de Avaliação Heurística -->
+    <div id="heuristics" class="tab-content">
+      <section>
+        <h2>Avaliação Heurística</h2>
+        <p>Nesta seção, avaliamos os protótipos de baixa fidelidade, heuristicamente, baseados nas Heurísticas de Nielsen.</p>
+
+        <h3>Problemas Encontrados</h3>
+        <p>Baseado nas heurísticas, foram encontrados diversos problemas no protótipo de baixa fidelidade, os quais serão ranqueados baseados no Severity Rating.</p>
+
+        <h4>Catástrofe de usabilidade</h4>
+        <p>Não foi identificado nenhum problema catastrófico de usabilidade, capaz de impedir a funcionalidade do programa.</p>
+        <h4>Problema majoritários de usabilidade</h4>
+        <!-- Problema 4: Os símbolos aparecem diversas vezes sobressaindo entre si, piorando a visibilidade do jogador em uma situação de perigo, varia vezes poluindo demais a tela. (8-Estética e aparência minimalista)
+ -->
+        <ol>  
+          <li>Não há uma padronização de símbolos, sendo eles alterados diversas vezes entre os símbolos e tamanhos para cada exemplo demonstrado e com isso não cumprindo com a quarta heurística de Nielsen referentes à padronização e consistência, conhecida por padrões e consistências.</li>
+          <li>Os símbolos aparecm diversas vezes sobrepondo entre si, desta maneira poluindo a tela e piorando a visibilidade do jogador em diversas situações do jogo, violando a oitava heurística e so,recarregando a interface do usuário estética e aparência minimalista.</li>
+        </ol>  
+          
+        <h4>Problemas minoritários de usabilidade</h4>
+        <!-- Problema 3: O usuário deve lembrar do caminho utilizado para conseguir voltar em uma configuração específica, pois o menu principal não possui um visual adequado que leva as opções de personalização (6-Recognition rather than recall). -->
+        <!-- Problema 5: Não existem mecanismos de orientação sobre como cada opção de configuração altera o jogo (10-Ajuda e documentação). -->
+        <!-- Problema 2: O protótipo não possui um botão de confirmação das mudanças de configuração (5-Prevenção de erro) -->
+        <ol>
+          <li>O usuário deve lembrar do caminho utilizado para conseguir voltar em uma configuração específica, pois o menu principal não possui um visual adequado que leva as opções de personalização. Isto viola a sexta heurística, recognition rather than recall.</li>
+          <li>O usuário não consegue obter orientação adequada sobre o como cada opção de configuração de acessibilidade vai alterar o funcionamento do overlay no jogo, de forma a violar a 10ª heurística que trata sobre Ajuda e documentação.</li>
+          <li>O protótipo não possui um botão de confirmação das mudanças de configuração, isto viola a quinta heurística, prevenção de erro.</li>
+        </ol>
+        <h4>Problemas cosméticos</h4>
+        <p>Os problemas cosméticos encontrados estão relacionados aos outros problemas já mencionados anteriormente. Desta maneira, não mencionaremos novamente os mesmos problemas.</p>
       </section>
     </div>
 
