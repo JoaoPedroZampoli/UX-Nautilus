@@ -246,3 +246,29 @@ footer { margin-top:30px; color:var(--muted); font-size:13px; text-align:center;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 217, 239, 0.3);
 }
+
+.problema-print-placeholder,
+.problema-balsamiq-placeholder {
+  width: 100%;
+  min-height: 200px; 
+  max-height: 400px; 
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+  border: 2px dashed rgba(255, 255, 255, 0.1); 
+  overflow: hidden;
+  position: relative;
+}
+
+.problema-print-placeholder img,
+.problema-balsamiq-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+  border-radius: 6px;
+}
