@@ -247,6 +247,24 @@ footer { margin-top:30px; color:var(--muted); font-size:13px; text-align:center;
   box-shadow: 0 6px 20px rgba(102, 217, 239, 0.3);
 }
 
+.drive-link {
+  background: linear-gradient(135deg, var(--accent), #4db8d4);
+  color: #0b1220;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 217, 239, 0.2);
+}
+
+.drive-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 217, 239, 0.3);
+}
+
 .problema-print-placeholder,
 .problema-balsamiq-placeholder {
   width: 100%;
@@ -271,4 +289,58 @@ footer { margin-top:30px; color:var(--muted); font-size:13px; text-align:center;
   object-fit: contain; 
   display: block;
   border-radius: 6px;
+}
+
+.print1-placeholder,
+.print2-placeholder,
+.robloxstd-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 10px;
+  border: 2px dashed rgba(255,255,255,0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.print1-placeholder img,
+.print2-placeholder img,
+.robloxstd-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.robloxplay-placeholder {
+  width: 100%;
+  aspect-ratio: 8/4;
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border: 2px dashed rgba(255,255,255,0.1);
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+.robloxplay-placeholder img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; 
+  
 }
